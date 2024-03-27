@@ -5,7 +5,7 @@ async function startWorker() {
         experimental: { disableExperimentalWarning: true },
         persist: true,
         port: 8767,
-        compatibilityFlags: ['nodejs_compat', 'streams_enable_constructors'],
+        compatibilityFlags: ['nodejs_compat'],
     });
     console.log("Worker started");
     // Optionally, keep the process running or perform additional checks here
