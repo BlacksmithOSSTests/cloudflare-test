@@ -11,7 +11,10 @@ on:
 
 jobs:
   start-worker:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, blacksmith-staging, blacksmith-2vcpu-ubuntu-2204]
 
     steps:
       - name: Checkout repository
