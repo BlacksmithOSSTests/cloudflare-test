@@ -1,0 +1,16 @@
+{
+  "name": "cloudflare-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start-worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.2",
+    "wrangler": "^3.38.0"
+  }
+}
