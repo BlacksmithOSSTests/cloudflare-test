@@ -1,5 +1,4 @@
 const { unstable_dev } = require("wrangler");
-const fetch = require('node-fetch'); // Ensure you have 'node-fetch' installed or use a different fetch implementation
 
 
 async function startWorker() {
@@ -11,6 +10,7 @@ async function startWorker() {
     });
     console.log("Worker started");
     // Optionally, keep the process running or perform additional checks here
+    const fetch = (await import('node-fetch')).default;
 
     // Make a fetch request to the worker
     try {
