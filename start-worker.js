@@ -1,4 +1,6 @@
 const { unstable_dev } = require("wrangler");
+const fetch = require('node-fetch'); // Ensure you have 'node-fetch' installed or use a different fetch implementation
+
 
 async function startWorker() {
     const worker = await unstable_dev('src/index.ts', {
