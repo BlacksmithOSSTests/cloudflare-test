@@ -1,4 +1,4 @@
-const { unstable_dev } = require("wrangler");
+import { unstable_dev } from 'wrangler'
 
 async function startWorker() {
     const worker = await unstable_dev('src/index.ts', {
